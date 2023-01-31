@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.why {
+  background: #62d0df;
+  color: white;
+  max-width: 100%;
+}
+
+.why__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.why__left {
+  max-width: 900px;
+  padding: 150px 100px 90px 180px;
+}
+
+.why__title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 75px;
+}
+
+.why__text {
+  max-width: 555px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+.why__text-mini {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.why__right {
+  align-self: stretch;
+}
+
+.why__right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+@media only screen and (max-width: 900px) {
+  .why__content {
+    flex-direction: column;
+  }
+
+  .why__right {
+    align-self: inherit;
+    justify-self: stretch;
+    width: 100%;
+  }
+
+  .why__left {
+    text-align: center;
+    padding: 90px 100px 90px 100px;
+  }
+}
